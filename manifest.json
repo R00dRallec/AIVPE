@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+
+  "name": "Amazon Instant Video PIN Automatizer",
+  "description": "This extension will automatically insert the AIV PIN",
+  "version": "1.0",
+  
+  "options_page": "options.html",
+  
+  "content_scripts": [{
+        "js": [
+               "jQuery.min.js",
+               "aivpin.js",
+			   "inject.js"
+              ],
+        "matches": [ "*://*.amazon.de/*" ],
+        "run_at": "document_end"
+    }],
+	
+	"web_accessible_resources": [
+		"jQuery.min.js"
+	],
+	
+  "permissions": [
+   "activeTab",
+   "storage"
+   ]
+}
