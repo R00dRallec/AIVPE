@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
 
-  "name": "Amazon Instant Video PIN Automatizer",
-  "description": "This extension will automatically insert the AIV PIN",
+  "name": "Amazon Instant Video PIN Extension",
+  "description": "Automatically enters your Amazon Instant Video PIN if asked when watching FSK 18 Videos.",
   "version": "1.0",
   
   "options_page": "options.html",
