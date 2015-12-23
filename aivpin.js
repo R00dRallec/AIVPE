@@ -69,6 +69,6 @@ function exec(fn, opts)
     var script = document.createElement('script');
     script.setAttribute("type", "application/javascript");
     script.textContent = '(' + fn + ')(' + args + ');';
-	(document.head || document.documentElement).appendChild(script)); // run the script
+	(document.head || document.documentElement).appendChild(script); // run the script
     (document.head || document.documentElement).removeChild(script); // clean up
 }
